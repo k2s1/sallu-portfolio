@@ -13,25 +13,6 @@ export const metadata: Metadata = {
   title: 'Sallu Web3 CM',
   description:
     'Dedicated Web3 Community Manager, Moderator and Ambassador with 1+ year of experience in Web3 and AI communities.',
-  
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
-}
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
