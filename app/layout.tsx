@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: 'Sallu Web3 CM',
   description:
     'Dedicated Web3 Community Manager, Moderator and Ambassador with 1+ year of experience in Web3 and AI communities.',
+}
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
