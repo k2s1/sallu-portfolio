@@ -175,8 +175,7 @@ const PeriodPill = ({ children }) => (
 );
 
 /* -------------------------------- Data ----------------------------------- */
-const PORTRAIT =
-  'https://image.qwenlm.ai/public_source/a5605fe7-5f56-4f91-8103-e24ae40b36c5/1a351743f-5e6d-4ce3-8a69-ffc243b75dbf.png';
+const PORTRAIT = '/images/portrait-nobg.png';
 
 const NAV = [
   { label: 'About', href: '#about' },
@@ -295,7 +294,7 @@ const HeroSection = () => (
 
     <div className="relative z-0 overflow-hidden px-2 mt-6 sm:mt-4 md:-mt-5">
       <FadeIn delay={0.15} y={40}>
-        <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]">
+        <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[11.5vw]">
           Hi, i’m sallu
         </h1>
       </FadeIn>
@@ -304,14 +303,18 @@ const HeroSection = () => (
     <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]">
       <FadeIn delay={0.6} y={30}>
         <Magnet padding={150} strength={3}>
-          <div
-            className="relative w-full aspect-[4/5] rounded-[26px] sm:rounded-[34px] md:rounded-[40px] overflow-hidden border border-white/15"
-            style={{ boxShadow: '0 30px 80px -20px rgba(190,76,0,0.45), 0 0 0 1px rgba(255,255,255,0.04)' }}
-          >
+          <div className="relative w-full aspect-[4/5]">
+            <div
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-3/4"
+              style={{
+                background:
+                  'radial-gradient(50% 60% at 50% 100%, rgba(118,33,176,0.35) 0%, rgba(12,12,12,0) 70%)',
+              }}
+            />
             <img
               src={PORTRAIT}
               alt="Sallu — Web3 Community Manager"
-              className="w-full h-full object-cover object-top"
+              className="relative w-full h-full object-contain object-bottom"
             />
           </div>
         </Magnet>
